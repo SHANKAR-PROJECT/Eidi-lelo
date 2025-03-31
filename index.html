@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Meri pyari Sadoo Eid Mubarak</strong>
+                        <p>
+                            Bohat acha sa din guzarana meri jaan. And I love you so much sadoo. 
+                            Physically toh Eidi abhi nahi dy sakta laiken ye aik chota sa Eid ka gift 
+                            meri jaan ky liay meri cutoo 
+                            meri pyari sadia tumharay liay😊.
+                        </p>
+                        <img src="Green Leaves Hand Drawn Personal Envelope.png" alt="Eid Gift" class="gift-img">
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
